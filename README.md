@@ -13,7 +13,7 @@ $ docker run -ti --rm containerstack/stress:1.0.4 \
     --timeout 60s
 ````
 
-In this example we are running a CPU stress test over 2 cores for 60 seconds
+After the 60 seconds the CPU load should return to normal usage.
 
 ## Options
 
