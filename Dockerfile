@@ -1,4 +1,4 @@
-FROM containerstack/alpine:3.5.0
+FROM containerstack/alpine:3.7.0
 MAINTAINER Remon Lam [remon@containerstack.io]
 
 ENV STRESS_VERSION=1.0.4
