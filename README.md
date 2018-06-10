@@ -4,9 +4,10 @@
 Stress is a deliberately simple workload generator for POSIX systems. It imposes a configurable amount of CPU, memory, I/O, and disk stress on the system.
 
 ## How to run the container;
+In this example the stress app will consume 2 cores for the duration of 60 seconds, after the 60 seconds the container will be stopped and removed from the system.
 
 ````
-$ docker run -ti --rm containerstack/alpine-stress \
+$ docker run -ti --rm containerstack/stress:1.0.4 \
     stress \
     --cpu 2 \
     --timeout 60s
@@ -42,8 +43,8 @@ Example: stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M --timeout 10s
 ````
 
 ## Docker images;
-The Docker Hub Auto Build is based on this repository can be found [here](https://hub.docker.com/r/containerstack/alpine-stress/).
+The Docker Hub Auto Build is based on this repository can be found [here](https://hub.docker.com/r/containerstack/stress/).
 
 ### Alpine source image;
 This container image is based on the containerstack/alpine image (AMD64).
-The Docker Hub Auto Build of this repo can be found [here](https://hub.docker.com/r/containerstack/alpine/), and the GitHub repo can be found [here](https://github.com/containerstack/docker-alpine). 
+The Docker Hub Auto Build of this repo can be found [here](https://hub.docker.com/r/containerstack/alpine/), and the Bitbucket repo can be found [here](https://bitbucket.org/containerstack/docker-stress/).
